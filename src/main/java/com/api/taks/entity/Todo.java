@@ -13,6 +13,13 @@ public class Todo {
     private boolean realizacao;
     private int prioridade;
 
+    public Todo(int prioridade, boolean realizacao, String decricao, String nome) {
+        this.prioridade = prioridade;
+        this.realizacao = realizacao;
+        this.decricao = decricao;
+        this.nome = nome;
+    }
+
     public Long getId() {
         return id;
     }
@@ -52,4 +59,6 @@ public class Todo {
     public void setPrioridade(int prioridade) {
         this.prioridade = prioridade;
     }
+
+
 }
